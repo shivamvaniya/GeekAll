@@ -1,0 +1,26 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>register</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form [formGroup]="rgstr">
+<ion-list>
+<ion-item>
+  <ion-input formControlName="uid" type="text" placeholder="User Name"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-input formControlName="pswd" type="password" placeholder="Password"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-input formControlName="repswd" type="password" placeholder="Re-Enter Password"></ion-input>
+</ion-item>
+</ion-list>
+<button ion-button block (click)="main()">Register</button>
+</form>
+</ion-content>

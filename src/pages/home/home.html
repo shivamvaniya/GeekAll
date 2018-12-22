@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      GeekAll
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<form [formGroup]="loginvalidate">
+   <ion-list>
+   <ion-item>
+     <ion-input type="text" formControlName="user" placeholder="User Name"></ion-input>
+   </ion-item>
+   <ion-item>
+     <ion-input type="password" formControlName="pswd" placeholder="Password" ></ion-input>
+   </ion-item>
+
+  </ion-list>
+ </form>
+ <button ion-button block (click)="login()">Login</button><br>
+ <button ion-button block color="light" (click)="register()">Register</button>
+ <div align="center">
+   <button ion-button large color="danger" round>
+     <ion-icon name="logo-google"></ion-icon>
+  </button>
+  <button ion-button large round>
+    <ion-icon name="logo-facebook"></ion-icon>
+  </button>
+
+  </div>
+</ion-content>
